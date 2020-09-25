@@ -1,0 +1,274 @@
+{
+	"variables": [],
+	"info": {
+		"name": "RestCountry",
+		"_postman_id": "5fccc106-1839-cd56-f6e9-bafacdcb14b6",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Country",
+			"request": {
+				"url": "http://localhost:8080/rest/v2/all",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Colombia\",\r\n    \"topLevelDomain\": [\".co\"],\r\n    \"alpha2Code\": \"CO\",\r\n    \"alpha3Code\": \"COL\",\r\n    \"callingCodes\": [\"57\"],\r\n    \"capital\": \"Bogotá\",\r\n    \"altSpellings\": [\"CO\", \"Republic of Colombia\", \"República de Colombia\"],\r\n    \"region\": \"Americas\",\r\n    \"subregion\": \"South America\",\r\n    \"population\": 48759958,\r\n    \"latlng\": [4.0, -72.0],\r\n    \"demonym\": \"Colombian\",\r\n    \"area\": 1141748.0,\r\n    \"gini\": 55.9,\r\n    \"timezones\": [\"UTC-05:00\"],\r\n    \"borders\": [\"BRA\", \"ECU\", \"PAN\", \"PER\", \"VEN\"],\r\n    \"nativeName\": \"Colombia\",\r\n    \"numericCode\": \"170\",\r\n    \"currency\": [\"COP\"],\r\n    \"languages\": {\r\n        \"iso639_1\": \"es\",\r\n        \"iso639_2\": \"spa\",\r\n        \"name\": \"Spanish\",\r\n        \"nativeName\": \"Español\"\r\n    },\r\n    \"translations\": {\r\n        \"de\": \"Kolumbien\",\r\n        \"es\": \"Colombia\",\r\n        \"fr\": \"Colombie\",\r\n        \"it\": \"Colombia\",\r\n        \"br\": \"Colômbia\",\r\n        \"pt\": \"Colômbia\"\r\n    },\r\n    \"flag\": \"https://restcountries.eu/data/col.svg\",\r\n    \"cioc\": \"COL\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Country By Name",
+			"request": {
+				"url": "http://localhost:8080/rest/v2/name/eesti",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Colombia\",\r\n    \"topLevelDomain\": [\".co\"],\r\n    \"alpha2Code\": \"CO\",\r\n    \"alpha3Code\": \"COL\",\r\n    \"callingCodes\": [\"57\"],\r\n    \"capital\": \"Bogotá\",\r\n    \"altSpellings\": [\"CO\", \"Republic of Colombia\", \"República de Colombia\"],\r\n    \"region\": \"Americas\",\r\n    \"subregion\": \"South America\",\r\n    \"population\": 48759958,\r\n    \"latlng\": [4.0, -72.0],\r\n    \"demonym\": \"Colombian\",\r\n    \"area\": 1141748.0,\r\n    \"gini\": 55.9,\r\n    \"timezones\": [\"UTC-05:00\"],\r\n    \"borders\": [\"BRA\", \"ECU\", \"PAN\", \"PER\", \"VEN\"],\r\n    \"nativeName\": \"Colombia\",\r\n    \"numericCode\": \"170\",\r\n    \"currency\": [\"COP\"],\r\n    \"languages\": {\r\n        \"iso639_1\": \"es\",\r\n        \"iso639_2\": \"spa\",\r\n        \"name\": \"Spanish\",\r\n        \"nativeName\": \"Español\"\r\n    },\r\n    \"translations\": {\r\n        \"de\": \"Kolumbien\",\r\n        \"es\": \"Colombia\",\r\n        \"fr\": \"Colombie\",\r\n        \"it\": \"Colombia\",\r\n        \"br\": \"Colômbia\",\r\n        \"pt\": \"Colômbia\"\r\n    },\r\n    \"flag\": \"https://restcountries.eu/data/col.svg\",\r\n    \"cioc\": \"COL\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Country By Full Name",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/rest/v2/name/aruba?fullText=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"v2",
+						"name",
+						"aruba"
+					],
+					"query": [
+						{
+							"key": "fullText",
+							"value": "true",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Colombia\",\r\n    \"topLevelDomain\": [\".co\"],\r\n    \"alpha2Code\": \"CO\",\r\n    \"alpha3Code\": \"COL\",\r\n    \"callingCodes\": [\"57\"],\r\n    \"capital\": \"Bogotá\",\r\n    \"altSpellings\": [\"CO\", \"Republic of Colombia\", \"República de Colombia\"],\r\n    \"region\": \"Americas\",\r\n    \"subregion\": \"South America\",\r\n    \"population\": 48759958,\r\n    \"latlng\": [4.0, -72.0],\r\n    \"demonym\": \"Colombian\",\r\n    \"area\": 1141748.0,\r\n    \"gini\": 55.9,\r\n    \"timezones\": [\"UTC-05:00\"],\r\n    \"borders\": [\"BRA\", \"ECU\", \"PAN\", \"PER\", \"VEN\"],\r\n    \"nativeName\": \"Colombia\",\r\n    \"numericCode\": \"170\",\r\n    \"currency\": [\"COP\"],\r\n    \"languages\": {\r\n        \"iso639_1\": \"es\",\r\n        \"iso639_2\": \"spa\",\r\n        \"name\": \"Spanish\",\r\n        \"nativeName\": \"Español\"\r\n    },\r\n    \"translations\": {\r\n        \"de\": \"Kolumbien\",\r\n        \"es\": \"Colombia\",\r\n        \"fr\": \"Colombie\",\r\n        \"it\": \"Colombia\",\r\n        \"br\": \"Colômbia\",\r\n        \"pt\": \"Colômbia\"\r\n    },\r\n    \"flag\": \"https://restcountries.eu/data/col.svg\",\r\n    \"cioc\": \"COL\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Country By Aplha Single Code",
+			"request": {
+				"url": "http://localhost:8080/rest/v2/alpha/co",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Colombia\",\r\n    \"topLevelDomain\": [\".co\"],\r\n    \"alpha2Code\": \"CO\",\r\n    \"alpha3Code\": \"COL\",\r\n    \"callingCodes\": [\"57\"],\r\n    \"capital\": \"Bogotá\",\r\n    \"altSpellings\": [\"CO\", \"Republic of Colombia\", \"República de Colombia\"],\r\n    \"region\": \"Americas\",\r\n    \"subregion\": \"South America\",\r\n    \"population\": 48759958,\r\n    \"latlng\": [4.0, -72.0],\r\n    \"demonym\": \"Colombian\",\r\n    \"area\": 1141748.0,\r\n    \"gini\": 55.9,\r\n    \"timezones\": [\"UTC-05:00\"],\r\n    \"borders\": [\"BRA\", \"ECU\", \"PAN\", \"PER\", \"VEN\"],\r\n    \"nativeName\": \"Colombia\",\r\n    \"numericCode\": \"170\",\r\n    \"currency\": [\"COP\"],\r\n    \"languages\": {\r\n        \"iso639_1\": \"es\",\r\n        \"iso639_2\": \"spa\",\r\n        \"name\": \"Spanish\",\r\n        \"nativeName\": \"Español\"\r\n    },\r\n    \"translations\": {\r\n        \"de\": \"Kolumbien\",\r\n        \"es\": \"Colombia\",\r\n        \"fr\": \"Colombie\",\r\n        \"it\": \"Colombia\",\r\n        \"br\": \"Colômbia\",\r\n        \"pt\": \"Colômbia\"\r\n    },\r\n    \"flag\": \"https://restcountries.eu/data/col.svg\",\r\n    \"cioc\": \"COL\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Country By Aplha Multiple Code",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/rest/v2/alpha?codes=col;no;ee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"v2",
+						"alpha"
+					],
+					"query": [
+						{
+							"key": "codes",
+							"value": "col;no;ee",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Colombia\",\r\n    \"topLevelDomain\": [\".co\"],\r\n    \"alpha2Code\": \"CO\",\r\n    \"alpha3Code\": \"COL\",\r\n    \"callingCodes\": [\"57\"],\r\n    \"capital\": \"Bogotá\",\r\n    \"altSpellings\": [\"CO\", \"Republic of Colombia\", \"República de Colombia\"],\r\n    \"region\": \"Americas\",\r\n    \"subregion\": \"South America\",\r\n    \"population\": 48759958,\r\n    \"latlng\": [4.0, -72.0],\r\n    \"demonym\": \"Colombian\",\r\n    \"area\": 1141748.0,\r\n    \"gini\": 55.9,\r\n    \"timezones\": [\"UTC-05:00\"],\r\n    \"borders\": [\"BRA\", \"ECU\", \"PAN\", \"PER\", \"VEN\"],\r\n    \"nativeName\": \"Colombia\",\r\n    \"numericCode\": \"170\",\r\n    \"currency\": [\"COP\"],\r\n    \"languages\": {\r\n        \"iso639_1\": \"es\",\r\n        \"iso639_2\": \"spa\",\r\n        \"name\": \"Spanish\",\r\n        \"nativeName\": \"Español\"\r\n    },\r\n    \"translations\": {\r\n        \"de\": \"Kolumbien\",\r\n        \"es\": \"Colombia\",\r\n        \"fr\": \"Colombie\",\r\n        \"it\": \"Colombia\",\r\n        \"br\": \"Colômbia\",\r\n        \"pt\": \"Colômbia\"\r\n    },\r\n    \"flag\": \"https://restcountries.eu/data/col.svg\",\r\n    \"cioc\": \"COL\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Country By Currency",
+			"request": {
+				"url": "http://localhost:8080/rest/v2/currency/cop",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Colombia\",\r\n    \"topLevelDomain\": [\".co\"],\r\n    \"alpha2Code\": \"CO\",\r\n    \"alpha3Code\": \"COL\",\r\n    \"callingCodes\": [\"57\"],\r\n    \"capital\": \"Bogotá\",\r\n    \"altSpellings\": [\"CO\", \"Republic of Colombia\", \"República de Colombia\"],\r\n    \"region\": \"Americas\",\r\n    \"subregion\": \"South America\",\r\n    \"population\": 48759958,\r\n    \"latlng\": [4.0, -72.0],\r\n    \"demonym\": \"Colombian\",\r\n    \"area\": 1141748.0,\r\n    \"gini\": 55.9,\r\n    \"timezones\": [\"UTC-05:00\"],\r\n    \"borders\": [\"BRA\", \"ECU\", \"PAN\", \"PER\", \"VEN\"],\r\n    \"nativeName\": \"Colombia\",\r\n    \"numericCode\": \"170\",\r\n    \"currency\": [\"COP\"],\r\n    \"languages\": {\r\n        \"iso639_1\": \"es\",\r\n        \"iso639_2\": \"spa\",\r\n        \"name\": \"Spanish\",\r\n        \"nativeName\": \"Español\"\r\n    },\r\n    \"translations\": {\r\n        \"de\": \"Kolumbien\",\r\n        \"es\": \"Colombia\",\r\n        \"fr\": \"Colombie\",\r\n        \"it\": \"Colombia\",\r\n        \"br\": \"Colômbia\",\r\n        \"pt\": \"Colômbia\"\r\n    },\r\n    \"flag\": \"https://restcountries.eu/data/col.svg\",\r\n    \"cioc\": \"COL\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Country By Language",
+			"request": {
+				"url": "http://localhost:8080/rest/v2/lang/es",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Colombia\",\r\n    \"topLevelDomain\": [\".co\"],\r\n    \"alpha2Code\": \"CO\",\r\n    \"alpha3Code\": \"COL\",\r\n    \"callingCodes\": [\"57\"],\r\n    \"capital\": \"Bogotá\",\r\n    \"altSpellings\": [\"CO\", \"Republic of Colombia\", \"República de Colombia\"],\r\n    \"region\": \"Americas\",\r\n    \"subregion\": \"South America\",\r\n    \"population\": 48759958,\r\n    \"latlng\": [4.0, -72.0],\r\n    \"demonym\": \"Colombian\",\r\n    \"area\": 1141748.0,\r\n    \"gini\": 55.9,\r\n    \"timezones\": [\"UTC-05:00\"],\r\n    \"borders\": [\"BRA\", \"ECU\", \"PAN\", \"PER\", \"VEN\"],\r\n    \"nativeName\": \"Colombia\",\r\n    \"numericCode\": \"170\",\r\n    \"currency\": [\"COP\"],\r\n    \"languages\": {\r\n        \"iso639_1\": \"es\",\r\n        \"iso639_2\": \"spa\",\r\n        \"name\": \"Spanish\",\r\n        \"nativeName\": \"Español\"\r\n    },\r\n    \"translations\": {\r\n        \"de\": \"Kolumbien\",\r\n        \"es\": \"Colombia\",\r\n        \"fr\": \"Colombie\",\r\n        \"it\": \"Colombia\",\r\n        \"br\": \"Colômbia\",\r\n        \"pt\": \"Colômbia\"\r\n    },\r\n    \"flag\": \"https://restcountries.eu/data/col.svg\",\r\n    \"cioc\": \"COL\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Country By Capital",
+			"request": {
+				"url": "http://localhost:8080/rest/v2/capital/tallinn",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Colombia\",\r\n    \"topLevelDomain\": [\".co\"],\r\n    \"alpha2Code\": \"CO\",\r\n    \"alpha3Code\": \"COL\",\r\n    \"callingCodes\": [\"57\"],\r\n    \"capital\": \"Bogotá\",\r\n    \"altSpellings\": [\"CO\", \"Republic of Colombia\", \"República de Colombia\"],\r\n    \"region\": \"Americas\",\r\n    \"subregion\": \"South America\",\r\n    \"population\": 48759958,\r\n    \"latlng\": [4.0, -72.0],\r\n    \"demonym\": \"Colombian\",\r\n    \"area\": 1141748.0,\r\n    \"gini\": 55.9,\r\n    \"timezones\": [\"UTC-05:00\"],\r\n    \"borders\": [\"BRA\", \"ECU\", \"PAN\", \"PER\", \"VEN\"],\r\n    \"nativeName\": \"Colombia\",\r\n    \"numericCode\": \"170\",\r\n    \"currency\": [\"COP\"],\r\n    \"languages\": {\r\n        \"iso639_1\": \"es\",\r\n        \"iso639_2\": \"spa\",\r\n        \"name\": \"Spanish\",\r\n        \"nativeName\": \"Español\"\r\n    },\r\n    \"translations\": {\r\n        \"de\": \"Kolumbien\",\r\n        \"es\": \"Colombia\",\r\n        \"fr\": \"Colombie\",\r\n        \"it\": \"Colombia\",\r\n        \"br\": \"Colômbia\",\r\n        \"pt\": \"Colômbia\"\r\n    },\r\n    \"flag\": \"https://restcountries.eu/data/col.svg\",\r\n    \"cioc\": \"COL\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Country By Region",
+			"request": {
+				"url": "http://localhost:8080/rest/v2/region/Africa",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Colombia\",\r\n    \"topLevelDomain\": [\".co\"],\r\n    \"alpha2Code\": \"CO\",\r\n    \"alpha3Code\": \"COL\",\r\n    \"callingCodes\": [\"57\"],\r\n    \"capital\": \"Bogotá\",\r\n    \"altSpellings\": [\"CO\", \"Republic of Colombia\", \"República de Colombia\"],\r\n    \"region\": \"Americas\",\r\n    \"subregion\": \"South America\",\r\n    \"population\": 48759958,\r\n    \"latlng\": [4.0, -72.0],\r\n    \"demonym\": \"Colombian\",\r\n    \"area\": 1141748.0,\r\n    \"gini\": 55.9,\r\n    \"timezones\": [\"UTC-05:00\"],\r\n    \"borders\": [\"BRA\", \"ECU\", \"PAN\", \"PER\", \"VEN\"],\r\n    \"nativeName\": \"Colombia\",\r\n    \"numericCode\": \"170\",\r\n    \"currency\": [\"COP\"],\r\n    \"languages\": {\r\n        \"iso639_1\": \"es\",\r\n        \"iso639_2\": \"spa\",\r\n        \"name\": \"Spanish\",\r\n        \"nativeName\": \"Español\"\r\n    },\r\n    \"translations\": {\r\n        \"de\": \"Kolumbien\",\r\n        \"es\": \"Colombia\",\r\n        \"fr\": \"Colombie\",\r\n        \"it\": \"Colombia\",\r\n        \"br\": \"Colômbia\",\r\n        \"pt\": \"Colômbia\"\r\n    },\r\n    \"flag\": \"https://restcountries.eu/data/col.svg\",\r\n    \"cioc\": \"COL\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Country By Calling Code",
+			"request": {
+				"url": "http://localhost:8080/rest/v2/callingcode/372",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Colombia\",\r\n    \"topLevelDomain\": [\".co\"],\r\n    \"alpha2Code\": \"CO\",\r\n    \"alpha3Code\": \"COL\",\r\n    \"callingCodes\": [\"57\"],\r\n    \"capital\": \"Bogotá\",\r\n    \"altSpellings\": [\"CO\", \"Republic of Colombia\", \"República de Colombia\"],\r\n    \"region\": \"Americas\",\r\n    \"subregion\": \"South America\",\r\n    \"population\": 48759958,\r\n    \"latlng\": [4.0, -72.0],\r\n    \"demonym\": \"Colombian\",\r\n    \"area\": 1141748.0,\r\n    \"gini\": 55.9,\r\n    \"timezones\": [\"UTC-05:00\"],\r\n    \"borders\": [\"BRA\", \"ECU\", \"PAN\", \"PER\", \"VEN\"],\r\n    \"nativeName\": \"Colombia\",\r\n    \"numericCode\": \"170\",\r\n    \"currency\": [\"COP\"],\r\n    \"languages\": {\r\n        \"iso639_1\": \"es\",\r\n        \"iso639_2\": \"spa\",\r\n        \"name\": \"Spanish\",\r\n        \"nativeName\": \"Español\"\r\n    },\r\n    \"translations\": {\r\n        \"de\": \"Kolumbien\",\r\n        \"es\": \"Colombia\",\r\n        \"fr\": \"Colombie\",\r\n        \"it\": \"Colombia\",\r\n        \"br\": \"Colômbia\",\r\n        \"pt\": \"Colômbia\"\r\n    },\r\n    \"flag\": \"https://restcountries.eu/data/col.svg\",\r\n    \"cioc\": \"COL\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add Country",
+			"request": {
+				"url": "http://localhost:8080/rest/v2/country",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Colombia\",\r\n    \"topLevelDomain\": [\".co\"],\r\n    \"alpha2Code\": \"CO\",\r\n    \"alpha3Code\": \"COL\",\r\n    \"callingCodes\": [\"57\"],\r\n    \"capital\": \"Bogotá\",\r\n    \"altSpellings\": [\"CO\", \"Republic of Colombia\", \"República de Colombia\"],\r\n    \"region\": \"Americas\",\r\n    \"subregion\": \"South America\",\r\n    \"population\": 48759958,\r\n    \"latlng\": [4.0, -72.0],\r\n    \"demonym\": \"Colombian\",\r\n    \"area\": 1141748.0,\r\n    \"gini\": 55.9,\r\n    \"timezones\": [\"UTC-05:00\"],\r\n    \"borders\": [\"BRA\", \"ECU\", \"PAN\", \"PER\", \"VEN\"],\r\n    \"nativeName\": \"Colombia\",\r\n    \"numericCode\": \"170\",\r\n    \"currency\": [\"COP\"],\r\n    \"languages\": {\r\n        \"iso639_1\": \"es\",\r\n        \"iso639_2\": \"spa\",\r\n        \"name\": \"Spanish\",\r\n        \"nativeName\": \"Español\"\r\n    },\r\n    \"translations\": {\r\n        \"de\": \"Kolumbien\",\r\n        \"es\": \"Colombia\",\r\n        \"fr\": \"Colombie\",\r\n        \"it\": \"Colombia\",\r\n        \"br\": \"Colômbia\",\r\n        \"pt\": \"Colômbia\"\r\n    },\r\n    \"flag\": \"https://restcountries.eu/data/col.svg\",\r\n    \"cioc\": \"COL\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
